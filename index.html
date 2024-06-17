@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- MENÚ ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Giovany Pieroli</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PROYECTOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/perfil.png" alt="">
+            </div>
+            <h1>Giovany Pieroli</h1>
+            <h2>Desarrollador Web</h2>
+            <div class="redes">
+                <a href=""><i class="fa-brands fa-linkedin"></i></a> 
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>¡Hola!, me llamo Giovany Pieroli</span> y soy un apasionado desarrollador web con un enfoque especializado en Front-End. Mi misión es crear experiencias digitales cautivadoras y funcionales que no solo atraigan, sino que también deleiten a los usuarios. Con un sólido dominio de HTML, CSS y JavaScript, realizo diseños creativos en interfaces interactivas y responsivas. Mi experiencia incluye colaboraciones en proyectos diversos, desde sitios web corporativos hasta aplicaciones web dinámicas, siempre buscando innovar y optimizar la experiencia del usuario. </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Teléfono</strong>
+                            654 261 600
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            giovany.andrey14@gmail.com
+                        </li>
+                        <li>
+                            <span><strong>FREELANCE</strong></span>
+                            
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="intereses">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>Música</span>
+                        </div>
+                        <div class="intereses"><i class="fa-solid fa-plane"></i>
+                            <span>Viajar</span>
+                        </div>
+                        <div class="intereses"><i class="fa-solid fa-laptop"></i>
+                            <span>Programar</span>
+                        </div>
+                        <div class="intereses"><i class="fa-solid fa-futbol"></i>
+                            <span>Deportes</span>
+                        </div>
+                </div>
+            <button> <a download="CV" href="Curriculum Giovany Pieroli.pdf">Descargar CV<i class="fa-solid fa-download"></i></a>
+                <span class="overlay"></span>
+            </button>
+
+            <!-- <a class="button" download="CV" href="Curriculum Giovany Pieroli.pdf">
+                Descargar CV<i class="fa-solid fa-download"></i>
+            </a> -->
+        </div>
+    </section>
+
+    <!-- SECCION HABILIDADES -->
+     <section id="skills" class="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- habilidades tecnicas -->
+                 <div class="col">
+                    <h3>Habilidades Técnicas</h3>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>80%</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML5</span>
+                        <div class="barra-skill">
+                            <div class="progreso html">
+                                <span>90%</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>CSS3</span>
+                        <div class="barra-skill">
+                            <div class="progreso css">
+                                <span>85%</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso phyton">
+                                <span>70%</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="barra-skill">
+                            <div class="progreso react">
+                                <span>70%</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Illustrator</span>
+                        <div class="barra-skill">
+                            <div class="progreso illustrator">
+                                <span>90%</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso photoshop">
+                                <span>90%</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SEO/SEM</span>
+                        <div class="barra-skill">
+                            <div class="progreso seo">
+                                <span>80%</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MongoDB</span>
+                        <div class="barra-skill">
+                            <div class="progreso mongodb">
+                                <span>75%</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>WordPress</span>
+                        <div class="barra-skill">
+                            <div class="progreso wordpress">
+                                <span>85%</span> 
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                 <!-- Habilidades profesionales -->
+                 <div class="col">
+                    <h3>Habilidades Profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso comunicacion">
+                                <span>90%</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso equipo">
+                                <span>85%</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso creatividad">
+                                <span>95%</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Disciplina</span>
+                        <div class="barra-skill">
+                            <div class="progreso disciplina">
+                                <span>99%</span> 
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- SECCION CURRICULUM -->
+      <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educacion</h3>
+                    <div class="item izq">
+                        <h4>Marketing y Publicidad</h4>
+                        <span class="casa">MEDAC</span>
+                        <span class="fecha">2020 -2022</span>
+                        <p>Durante mi formación conseguí una sólida base en investigación de mercados, y estrategias de marketing digital, incluyendo SEO, SEM, y gestión de campañas en redes sociales. Además, he desarrollado habilidades en planificación y gestión de campañas publicitarias, creación de contenidos, y uso de medios tradicionales y digitales.
+                        <br>
+                        <br>
+                        También poseo conocimientos en analítica web, así como en diseño y maquetación web, lo que me permite crear páginas atractivas y funcionales para mejorar la experiencia del usuario.</p>
+                        <div class="conectori">
+                            <div class="circulo"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Desarrollo de Aplicaciones Web</h4>
+                        <span class="casa">MEDAC</span>
+                        <span class="fecha">2022 -2024</span>
+                        <p>Gracias a este grado he aprendido a fondo sobre la programación web, utilizando lenguajes como HTML, CSS, JavaScript y PHP. Por otro lado, he trabajado en la gestión de bases de datos y en la creación de interfaces de usuario que son tanto atractivas como funcionales (UI/UX). 
+                        <br>
+                        <br>
+                        Asímismo, cuento con experiencia en el uso de frameworks y librerías como React y Node.js, y estoy capacitado para desarrollar aplicaciones web responsivas y optimizar su rendimiento.</p>
+                        <div class="conectori">
+                            <div class="circulo"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia laboral</h3>
+                    <div class="item dcha">
+                        <h4>Desarrollador y Diseñador Front-End</h4>
+                        <span class="casa">IBP Digital</span>
+                        <span class="fecha">2022 (3 meses)</span>
+                        <p>Entre mis responsabilidades incluían interactuar directamente con los clientes para comprender sus necesidades y expectativas respecto a sus páginas web. Organizaba reuniones para discutir sus objetivos, el diseño deseado y las funcionalidades requeridas. Por último me encargaba de diseñar y desarrollar las páginas web, asegurándome de que cumplieran con sus especificaciones y ofrecieran una experiencia de usuario óptima.
+
+                        <br>
+                        <br>
+                        
+                        Además, he realizado tarjetas de visita para empresas, utilizando herramientas como Photoshop e Illustrator. Este proceso incluía desde la conceptualización del diseño hasta la producción final.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item dcha">
+                        <h4>Desarrollador Front-End</h4>
+                        <span class="casa">Grupo Oro</span>
+                        <span class="fecha">2024 (3 meses)</span>
+                        <p>Durante mi tiempo en esta empresa, tuve la responsabilidad de liderar el proceso completo de desarrollo de sitios web personalizados para nuestros clientes. Mi labor incluía desde la creación inicial de la maquetación y diseño de las páginas hasta la implementación y gestión del mantenimiento periódico para garantizar su funcionamiento óptimo a lo largo del tiempo.
+                        <br>
+                        <br>
+                        Por otro lado estuve implicado en la implementación de estrategias de SEO. En ellas analizaba palabras clave relevantes, optimizaba contenidos ymejoraba la estructura del sitio</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- SECCION PORTFOLIO -->
+       <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PROYECTOS</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/reforma.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Empresa Reformas</h3>
+                        <p>Coming soon</p>
+                    </div>
+                </div>
+            <div class="proyecto">
+                <img src="img/marketing.jpg" alt="">
+                <div class="overlay">
+                    <h3>Consultoría Marketing</h3>
+                    <p>Coming soon</p>
+                </div>
+            </div>
+                
+            </div>
+        </div>
+       </section>
+
+       <!-- SECCION CONTACTO
+        <section id="contacto" class="contacto">
+            <div class="contenido-seccion">
+                <h2>CONTACTO</h2>
+                <div class="fila">
+                    formulario
+                    <div class="col">
+                        <input type="text" placeholder="Nombre">
+                        <input type="text" placeholder="Teléfono">
+                        <input type="text" placeholder="Correo electrónico">
+                        <input type="text" placeholder="Asunto">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <button>
+                            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- FOOTER -->
+         <footer>
+            <a href="#inicio" class="arriba">
+                <i class="fa-solid fa-angles-up"></i>
+            </a>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a> 
+            </div>
+         </footer>
+
+         <script src="script.js"></script>
+</body>
+</html>
